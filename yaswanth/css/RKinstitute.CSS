@@ -1,0 +1,127 @@
+/* Reset and basic styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #f4f4f4;
+}
+
+/* Container */
+.container {
+  width: 90%;
+  max-width: 1100px;
+  margin: auto;
+}
+
+/* Header */
+header {
+  background: #003366;
+  color: #fff;
+  padding: 20px 0;
+}
+
+.logo {
+  float: left;
+}
+
+nav {
+  float: right;
+}
+
+.nav-links {
+  list-style: none;
+}
+
+.nav-links li {
+  display: inline;
+  margin-left: 20px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+header::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+/* Hero Section */
+.hero {
+  background: url('https://via.placeholder.com/1200x400') center/cover no-repeat;
+  color: solid blue;
+  text-align: center;
+  padding: 100px 20px;
+}
+
+.hero .btn {
+  background: #ff6600;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  margin-top: 20px;
+  display: inline-block;
+}
+
+/* About */
+.about, .courses, .contact {
+  padding: 60px 20px;
+  background-color: white;
+  margin-bottom: 20px;
+}
+
+.about h2, .courses h2, .contact h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Courses */
+.course-list {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.course {
+  flex: 1 1 30%;
+  background: #eaeaea;
+  padding: 20px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+/* Contact */
+.contact p {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+/* Footer */
+footer {
+  background: #003366;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .nav-links li {
+    display: block;
+    margin: 10px 0;
+  }
+
+  .course-list {
+    flex-direction: column;
+  }
+}
